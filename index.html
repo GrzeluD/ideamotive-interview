@@ -5,22 +5,20 @@
     <meta charset="utf-8">
     <title>Ideamotive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body class="body">
 <header class="header">
-    <div class="header-top">
-        <h1 class="logo">
+    <div class="header-top row flex-between">
+        <h1 class="logo col">
             <a href="#" class="logo-link icon" title="ideamotive">
                 <span class="hidden">Ideamotive</span>
             </a>
         </h1>
-        <nav class="menu-nav">
+        <nav class="menu-nav col">
             <ul class="menu-list">
                 <li class="menu-list-item">
                     <a href="#">Services</a>
@@ -44,59 +42,56 @@
                     <a href="#">Hire talents</a>
                 </li>
             </ul>
-            <button class="menu-mobile-button mobile button">
+            <button class="menu-mobile-button mobile icon button col">
                 <span class="hidden">Navigation button</span>
             </button>
         </nav>
-        <div class="header-content">
-            <picture class="header-img">
-                <source media="(max-width: 749px)" srcset="assets/images/cover_photo_mobile@1x.png">
-                <source media="(min-width: 750px) and (max-width: 1279px)" srcset="assets/images/cover_photo_mobile@2x.png">
-                <source media="(min-width: 1280px)" srcset="assets/images/cover_photo_desktop@1x.png">
-                <img src="assets/images/cover_photo_desktop@1x.png" alt="Art painting">
-            </picture>
-            <div class="header-description">
-                <h2 class="heading">Marrying web development and business processes support</h2>
-                <p>How to optimize booking system for a Japanese railway network and increase sales?</p>
-            </div>
+    </div>
+    <div class="header-content">
+        <picture class="header-img">
+            <source media="(max-width: 374px)" srcset="assets/images/cover_photo_mobile@1x.png">
+            <source media="(min-width: 375px) and (max-width: 750px)" srcset="assets/images/cover_photo_mobile@2x.png">
+            <source media="(min-width: 750px)" srcset="assets/images/cover_photo_desktop@1x.png">
+            <img src="assets/images/cover_photo_desktop@1x.png" alt="Art painting">
+        </picture>
+        <div class="header-description">
+            <h2 class="heading">Marrying web development and business processes support</h2>
+            <p>How to optimize booking system for a Japanese railway network and increase sales?</p>
         </div>
     </div>
 </header>
 <main class="main">
     <section class="about-us">
         <h2 class="hidden">About us</h2>
-        <p>JRPASS is a UK-based company selling tickets for Japanese railway connections all around the world.
-            You click, order, pay - and within a few days you have ticket arriving at your doorstep.
+        <p>JRPass is a UK-based company selling tickets for Japanese railway connections all around the world.
+            You click, order, pay - and within a few days you have the ticket arriving at your doorstep.
             With JRPass you can travel all around Japan or within its specific regions with just one ticket.</p>
     </section>
     <section class="challenge">
         <h2 class="heading">Challenge</h2>
-        <div class="content">
-            <p>We took the project over from the previous team. The process of transferring the work was challenging in itself.
-                The system had to be continuously developed, while the developers and process were changing.
-                Durning the development, we also encountered several challenges connected to performance and business optimalization.</p>
+        <p>We took the project over from the previous team. The process of transferring the work was challenging in itself.
+            The system had to be continuously developed, while the developers and process were changing.
+            During the development, we also encountered several challenges connected to performance and business optimization.</p>
         </div>
         <h3 class="list-heading">The main ones where:</h3>
-        <div class="content">
-            <ul>
-                <li>integrating the project into our development framework</li>
-                <li>lack of Regional Passes offers</li>
-                <li>lack of website translations to various popular languages</li>
-                <li>old versions of the framework</li>
-            </ul>
-        </div>
+        <ul class="challenge-list">
+            <li class="challenge-list-item">integrating the project into our development framework</li>
+            <li class="challenge-list-item">lack of Regional Passes offers</li>
+            <li class="challenge-list-item">lack of website translations to various popular languages</li>
+            <li class="challenge-list-item">old versions of the framework</li>
+        </ul>
     </section>
     <aside class="project-details">
-        <section class="project-details-section">
+        <section class="project-details-section row column">
             <h2 class="project-details-heading">JRPasss</h2>
             <span class="project-details-top">client</span>
-            <h3 class="challenge-footer-heading-second" >Japan</h3>
+            <h3 class="project-details-heading-second" >Japan</h3>
         </section>
-        <section class="project-details-section">
+        <section class="project-details-section row column">
             <h2 class="project-details-heading">5 months</h2>
             <span class="project-details-top">work duration</span>
         </section>
-        <section class="project-details-section">
+        <section class="project-details-section row column">
             <h2 class="project-details-heading hidden">scope</h2>
             <ul class="project-details-list">
                 <li class="project-details-item">
@@ -118,7 +113,7 @@
             <ul class="carousel-list">
                 <li class="carousel-item">
                     <a class="carousel-link" href="assets/images/project_image_01@2x.jpg">
-                        <picture class="header-img">
+                        <picture class="gallery-img">
                             <source media="(max-width: 863px)" srcset="assets/images/project_image_01@1x.jpg">
                             <source media="(min-width: 864px)" srcset="assets/images/project_image_01@2x.jpg">
                             <img src="assets/images/project_image_01@2x.jpg" alt="Art painting">
@@ -127,7 +122,7 @@
                 </li>
                 <li class="carousel-item">
                     <a class="carousel-link" href="assets/images/project_image_02@2x.jpg">
-                        <picture class="header-img">
+                        <picture class="gallery-img">
                             <source media="(max-width: 863px)" srcset="assets/images/project_image_02@1x.jpg">
                             <source media="(min-width: 864px)" srcset="assets/images/project_image_02@2x.jpg">
                             <img src="assets/images/project_image_02@2x.jpg" alt="Art painting">
@@ -136,7 +131,7 @@
                 </li>
                 <li class="carousel-item">
                     <a class="carousel-link" href="assets/images/project_image_03@2x.jpg">
-                        <picture class="header-img">
+                        <picture class="gallery-img">
                             <source media="(max-width: 863px)" srcset="assets/images/project_image_03@1x.jpg">
                             <source media="(min-width: 864px)" srcset="assets/images/project_image_03@2x.jpg">
                             <img src="assets/images/project_image_03@2x.jpg" alt="Art painting">
@@ -146,13 +141,13 @@
             </ul>
         </nav>
         <nav class="carousel-nav">
-            <ul>
-                <li>
+            <ul class="carousel-nav-list">
+                <li class="carousel-nav-item">
                     <button class="prev icon">
                         <span class="hidden">Previous</span>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-nav-item">
                     <button class="next icon">
                         <span class="hidden">Next</span>
                     </button>
@@ -162,16 +157,20 @@
     </section>
     <section class="client">
         <h2 class="hidden">Quote</h2>
-        <p>When you brose through videos at YouTube, which do you usually click first: one with arount 10 views or one with around 75,000 views?
-        If you're normal, the you're much more likely to click on YouTube</p>
-        <div class="client-info">
-            <picture class="client-img">
-                <source media="(max-width: 749px)" srcset="assets/images/client_avatar@1x.png">
-                <source media="(min-width: 750px)" srcset="assets/images/client_avatar@2x.png">
-                <img src="assets/images/client_avatar@2x.png" alt="Client avatar">
-            </picture>
-            <h3 class="client-heading icon">Daniel Warner</h3>
-            <p class="client-description">Ruby developer at Ideamotive</p>
+        <p>When you browse through videos at YouTube, which do you usually click first: one with around 10 views or one with around 75,000 views?
+        If you're normal, then you're much more likely to click on YouTube</p>
+        <div class="client-info row">
+            <div class="client-img-col col">
+                <picture class="client-img">
+                    <source media="(max-width: 749px)" srcset="assets/images/client_avatar@1x.png">
+                    <source media="(min-width: 750px)" srcset="assets/images/client_avatar@2x.png">
+                    <img src="assets/images/client_avatar@2x.png" alt="Client avatar">
+                </picture>
+            </div>
+            <div class="col client-info-col">
+                <h3 class="client-heading icon">Daniel Warner</h3>
+                <p class="client-description">Ruby developer at Ideamotive</p>
+            </div>
         </div>
     </section>
     <aside class="social-media">
@@ -204,7 +203,7 @@
             <ul class="specialist-list">
                 <li class="specialist-item">
                     <a href="#" class="specialist-link icon software">
-                        Ruby on rails Developers
+                        Ruby on Rails Developers
                     </a>
                 </li>
                 <li class="specialist-item">
